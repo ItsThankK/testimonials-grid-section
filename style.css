@@ -31,7 +31,54 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.3rem;
+  font-family: var(--ff-barlow);
+  line-height: 1.1;
+  background-color: var(--clr-grey-100);
+  /* color: var(--clr-white); */
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+/* Composition */
+.wrapper {
+  max-width: 100rem;
+  margin: 20rem auto;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Utilities */
+.bg-grey {
+  background-color: var(--clr-grey-500);
+}
+
+/* Block */
+.card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--clr-white);
+}
+
+.card:first-child {
+  grid-column: span 2;
+  background-color: var(--clr-purple-500);
+}
+
+.card:nth-child(4) {
+  grid-column: span 2;
+  background-color: var(--clr-dark-blue);
+}
+
+.card:last-child {
+  grid-column: 4;
+  grid-row: 1 / 3;
 }
