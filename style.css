@@ -66,6 +66,10 @@ img {
   padding: 2rem;
   border-radius: 1rem;
   background-color: var(--clr-white);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .card:first-child {
@@ -83,6 +87,21 @@ img {
   grid-row: 1 / 3;
 }
 
-.card__profile {
+.card__profile,
+.card__profile-credentials {
   display: flex;
 }
+
+.card__profile-credentials {
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.card__profile-img-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
