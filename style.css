@@ -82,7 +82,7 @@ img {
 .card:first-child::before {
   font-family: sans-serif;
   content: "\201C";
-  font-size: clamp(10rem, 20vw, 40rem); 
+  font-size: 40rem;
 
   position: absolute;
   top: -7rem;
@@ -135,4 +135,45 @@ img {
 
 .card__profile-img-box[data-ring="clr-purple"] {
   border: 0.15rem solid var(--clr-purple-300);
+}
+
+/* Media queries - Responsive */
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 10rem 2rem;
+  }
+
+  .section-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card:last-child {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    margin: 2rem 2rem;
+  }
+
+  .section-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
+@media screen and (min-max: 425px) {
+  .card:first-child::before {
+    opacity: 0;
+  }
 }
