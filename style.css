@@ -172,7 +172,7 @@ img {
   }
 }
 
-@media screen and (min-max: 425px) {
+@media screen and (max-width: 425px) {
   .card:first-child::before {
     opacity: 0;
   }
