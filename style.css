@@ -82,7 +82,7 @@ img {
 .card:first-child::before {
   font-family: sans-serif;
   content: "\201C";
-  font-size: 40rem; 
+  font-size: clamp(10rem, 20vw, 40rem); 
 
   position: absolute;
   top: -7rem;
