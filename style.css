@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  font-size: 5rem;
+  font-size: 1.3rem;
   font-family: var(--ff-barlow);
   line-height: 1.1;
   background-color: var(--clr-grey-100);
@@ -85,9 +85,4 @@ img {
 
 .card__profile {
   display: flex;
-}
-
-.card__profile:nth-child(2) {
-  display: flex;
-  background-color: gold  ;
 }
