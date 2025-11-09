@@ -33,6 +33,7 @@ html {
 
 body {
   font-size: clamp(1rem, 8vw + 1rem, 1.3rem);
+  background-color: aquamarine;
   font-family: var(--ff-barlow);
   line-height: 1.1;
   background-color: var(--clr-grey-100);
